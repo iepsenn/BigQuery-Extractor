@@ -38,7 +38,7 @@ for param in params['tables_params']:
     if not os.path.exists(data_path):
         os.makedirs(data_path)
 
-    output_filename = '{}{}_{}.csv'.format(data_path, dataset, table)
+    output_filename = '{}{}.csv'.format(data_path, table)
 
     dataframe = get_bq_data(table, dataset, project)
 
